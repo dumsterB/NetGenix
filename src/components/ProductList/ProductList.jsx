@@ -5,8 +5,8 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые',img:'https://tashkentkfc.me/wp-content/uploads/2021/04/28-%D0%BA%D1%80%D1%8B%D0%BB%D0%B0-300x300.png'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая',img:''},
+    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},
+    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4479.jpg'},
     {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
     {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
     {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
