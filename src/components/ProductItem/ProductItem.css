@@ -1,8 +1,10 @@
 .product {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 18px;
+    position: relative;
     width: 170px;
+    height: 350px;
 }
 
 
@@ -23,10 +25,14 @@
     font-weight: 700;
     font-size: 18px;
 }
-
+.price{
+    margin-top: 10px;
+}
 .add-btn {
     width: 120px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
     font-size: 12px;
     margin: 10px auto 10px auto;
     height: 40px;

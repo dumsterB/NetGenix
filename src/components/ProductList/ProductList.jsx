@@ -5,16 +5,15 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4479.jpg'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4474.jpg'},
-    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4449.jpg'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4474.jpg'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4450.jpg'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4487.jpg'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4487.jpg'},
+    {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},
+    {id: '2', title: 'Боксмастер Оригинал', price: '27 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4479.jpg'},
+    {id: '3', title: 'Чизбургер', price:'16 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4449.jpg'},
+    {id: '4', title: 'Шефбургер Оригинал', price:'20 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4449.jpg'},
+    {id: '5', title: 'Биг Сендерс Бургер', price: '34 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},
+    {id: '6', title: 'Биг Сендерс Острый', price: '34 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/5124.jpg'},
+    {id: '7', title: 'Сендерс Бургер', price:'28 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5121.jpg'},
+    {id: '8', title: 'Лонгер', price:'13 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4450.jpg'},
 ]
-
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
         return acc += item.price
