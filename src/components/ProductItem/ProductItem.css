@@ -16,13 +16,20 @@
 
 .description {
     font-size: 0.8em;
+    color: #757575;
+    margin-top: 10px;
+}
+.price-text{
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .add-btn {
-    width: 100px;
-    margin-top: 10px;
-    font-size: 10px;
-    height: 32px;
+    width: 120px;
+    margin-top: 20px;
+    font-size: 12px;
+    margin: 10px auto 10px auto;
+    height: 40px;
     color: white;
     background: #e4002b;
     border-radius: 50px;
