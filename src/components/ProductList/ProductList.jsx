@@ -3,10 +3,12 @@ import './ProductList.css';
 import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
+import sticker from '../../assets/images/sticker.webp'
+import sticker1 from '../../assets/images/sticker1.webp'
 
 const products = [
-    {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:'https://kfc.com.uz/admin/files/5122.jpg'},
-    {id: '2', title: 'Боксмастер Оригинал', price: '27 000', description: 'Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:'https://kfc.com.uz/admin/files/4479.jpg'},
+    {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:sticker},
+    {id: '2', title: 'Боксмастер Оригинал', price: '27 000', description: 'Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:sticker1},
     {id: '3', title: 'Чизбургер', price:'16 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4449.jpg'},
     {id: '4', title: 'Шефбургер Оригинал', price:'20 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4449.jpg'},
     {id: '5', title: 'Биг Сендерс Бургер', price: '34 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},

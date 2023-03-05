@@ -11,7 +11,7 @@
 .img {
     width: 100%;
     background: lightgray;
-    height: 100px;
+    height: 200px;
     margin: 0 auto;
     background: var(--tg-theme-button-color);
 }
@@ -22,7 +22,7 @@
     margin-top: 10px;
 }
 .title{
-    margin-top: 5px;
+    margin-top: 30px;
 }
 .price-text{
     font-weight: 700;
