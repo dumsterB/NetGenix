@@ -4,7 +4,7 @@
     padding: 18px;
     position: relative;
     width: 170px;
-    height: 350px;
+    height: 450px;
 }
 
 
@@ -20,6 +20,9 @@
     font-size: 0.8em;
     color: #757575;
     margin-top: 10px;
+}
+.title{
+    margin-top: 5px;
 }
 .price-text{
     font-weight: 700;
