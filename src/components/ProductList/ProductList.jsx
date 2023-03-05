@@ -5,6 +5,15 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 import sticker from '../../assets/images/sticker.webp'
 import sticker1 from '../../assets/images/sticker1.webp'
+import sticker2 from '../../assets/images/sticker3.webp'
+import sticker3 from '../../assets/images/sticker3.webp'
+import sticker4 from '../../assets/images/sticker4.webp'
+import sticker5 from '../../assets/images/sticker5.webp'
+import sticker6 from '../../assets/images/sticker6.webp'
+import sticker7 from '../../assets/images/sticker7.webp'
+import sticker8 from '../../assets/images/sticker8.webp'
+import sticker9 from '../../assets/images/sticker9.webp'
+
 
 const products = [
     {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:sticker},
