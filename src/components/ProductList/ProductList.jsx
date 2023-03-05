@@ -18,12 +18,12 @@ import sticker9 from '../../assets/images/sticker9.webp'
 const products = [
     {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:sticker},
     {id: '2', title: 'Боксмастер Оригинал', price: '27 000', description: 'Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:sticker1},
-    {id: '3', title: 'Чизбургер', price:'16 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/4449.jpg'},
-    {id: '4', title: 'Шефбургер Оригинал', price:'20 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4449.jpg'},
-    {id: '5', title: 'Биг Сендерс Бургер', price: '34 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5122.jpg'},
-    {id: '6', title: 'Биг Сендерс Острый', price: '34 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/5124.jpg'},
-    {id: '7', title: 'Сендерс Бургер', price:'28 000', description: 'Синего цвета, прямые',img:'https://kfc.com.uz/admin/files/5121.jpg'},
-    {id: '8', title: 'Лонгер', price:'13 000', description: 'Зеленого цвета, теплая',img:'https://kfc.com.uz/admin/files/4450.jpg'},
+    {id: '3', title: 'Чизбургер', price:'16 000', description: 'Синего цвета, прямые',img:sticker2},
+    {id: '4', title: 'Шефбургер Оригинал', price:'20 000', description: 'Зеленого цвета, теплая',img:sticker3},
+    {id: '5', title: 'Биг Сендерс Бургер', price: '34 000', description: 'Синего цвета, прямые',img:sticker4},
+    {id: '6', title: 'Биг Сендерс Острый', price: '34 000', description: 'Зеленого цвета, теплая',img:sticker5},
+    {id: '7', title: 'Сендерс Бургер', price:'28 000', description: 'Синего цвета, прямые',img:sticker6},
+    {id: '8', title: 'Лонгер', price:'13 000', description: 'Зеленого цвета, теплая',img:sticker7},
 ]
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
