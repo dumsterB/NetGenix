@@ -5,6 +5,9 @@ import './ProductItem.css';
 const ProductItem = ({product, className, onAdd}) => {
 
     const onAddHandler = () => {
+        console.log(product)
+        product.active === true
+        console.log(product)
         onAdd(product);
     }
 
@@ -16,9 +19,10 @@ const ProductItem = ({product, className, onAdd}) => {
             <div className={'price'}>
                 <span><span className={'price-text'}> {product.price} </span> сум</span>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                Добавить в корзину
-            </Button>
+            { product.active
+               ? <div><Button>+</Button>  <Button>-</Button> </div>
+               : <Button className={'add-btn'} onClick={onAddHandler}> Добавить в корзину </Button>
+            }
         </div>
     );
 };
