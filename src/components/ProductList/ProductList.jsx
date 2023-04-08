@@ -16,14 +16,70 @@ import sticker9 from '../../assets/images/sticker9.webp'
 
 
 const products = [
-    {id: '1', title: 'Биг Сандерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:sticker,active:false},
-    {id: '2', title: 'Боксмастер Оригинал', price: '27 000', description: 'Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:sticker1,active:false},
-    {id: '4', title: 'Шефбургер Оригинал', price:'20 000', description: 'соус Цезарь, филе в оригинальной панировке, хашбраун, ломтик сыра, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:sticker4,active:false},
-    {id: '5', title: 'Биг Сендерс Бургер', price: '34 000', description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',img:sticker5,active:false},
-    {id: '3', title: 'Чизбургер', price:'16 000', description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',img:sticker3,active:false},
-    {id: '6', title: 'Биг Сендерс Острый', price: '34 000', description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',img:sticker5,active:false},
-    {id: '7', title: 'Сендерс Бургер', price:'28 000', description: 'соус Цезарь, филе в оригинальной панировке, хашбраун, ломтик сыра, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.',img:sticker8,active:false},
-    {id: '8', title: 'Лонгер', price:'13 000', description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',img:sticker9,active:false},
+    {
+        id: '1',
+        title: 'Биг Сандерс Бургер',
+        price: '34 000',
+        description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',
+        img: sticker,
+        active: false
+    },
+    {
+        id: '2',
+        title: 'Боксмастер Оригинал',
+        price: '27 000',
+        description: 'Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.',
+        img: sticker1,
+        active: false
+    },
+    {
+        id: '4',
+        title: 'Шефбургер Оригинал',
+        price: '20 000',
+        description: 'соус Цезарь, филе в оригинальной панировке, хашбраун, ломтик сыра, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.',
+        img: sticker4,
+        active: false
+    },
+    {
+        id: '5',
+        title: 'Биг Сендерс Бургер',
+        price: '34 000',
+        description: 'Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.',
+        img: sticker5,
+        active: false
+    },
+    {
+        id: '3',
+        title: 'Чизбургер',
+        price: '16 000',
+        description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',
+        img: sticker3,
+        active: false
+    },
+    {
+        id: '6',
+        title: 'Биг Сендерс Острый',
+        price: '34 000',
+        description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',
+        img: sticker5,
+        active: false
+    },
+    {
+        id: '7',
+        title: 'Сендерс Бургер',
+        price: '28 000',
+        description: 'соус Цезарь, филе в оригинальной панировке, хашбраун, ломтик сыра, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.',
+        img: sticker8,
+        active: false
+    },
+    {
+        id: '8',
+        title: 'Лонгер',
+        price: '13 000',
+        description: 'Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.',
+        img: sticker9,
+        active: false
+    },
 ]
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
@@ -60,8 +116,9 @@ const ProductList = () => {
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
         let newItems = [];
-
-        if(alreadyAdded) {
+        products.map(product => product.active = false)
+        product.active = true
+        if (alreadyAdded) {
             newItems = addedItems.filter(item => item.id !== product.id);
         } else {
             newItems = [...addedItems, product];
@@ -69,7 +126,7 @@ const ProductList = () => {
 
         setAddedItems(newItems)
 
-        if(newItems.length === 0) {
+        if (newItems.length === 0) {
             tg.MainButton.hide();
         } else {
             tg.MainButton.show();

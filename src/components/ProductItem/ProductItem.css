@@ -44,3 +44,17 @@
     background: #e4002b;
     border-radius: 50px;
 }
+.plus{
+    font-size: 30px;
+    background-color: yellow;
+    border-radius: 360px;
+    color: white;
+    padding: 5px 15px;
+}
+.minus{
+    font-size: 30px;
+    background-color: #e4002b;
+    border-radius: 360px;
+    color: white;
+    padding: 5px 15px;
+}
